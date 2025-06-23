@@ -1,4 +1,4 @@
-#Simple calculator program
+# Simple calculator program
 
 valid_operator = ["+", "-", "*", "/"] # Operators that are used for math
 
