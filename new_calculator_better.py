@@ -30,10 +30,11 @@ def calculate(num1, num2, operator):
     else:
         return None
 
-valid_operator = ["+", "-", "*", "/", "//", "**", "%"] # Operators that are used for math
+valid_operator = {"+", "-", "*", "/", "//", "**", "%"} # Operators that are used for math
 
 while True:
     operator = input("Please enter your operator (+ - * / // ** %), or 'q' to quit: ").strip()
+    operator = operator.replace(" ", "")
 
     if operator.strip().lower() == "q":
         print("Thank you for playing!")
